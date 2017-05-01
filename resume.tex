@@ -1,6 +1,8 @@
 % Resume for Andrew Fugier
 % Orginal template was located at
 % http://www.tedpavlic.com/post_resume_cv_latex_example.php
+% I've left almost all of the orginal comments and whatnot so that if
+% others like the general format, they may use this as their own template.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Don't like 10pt? Try 11pt or 12pt
@@ -273,8 +275,8 @@
 % Address box
 \parbox{\textwidth-\rcollength-\spacewidth}{
 Andrew Fugier\\
-2427 Kentucky Street\\
-Bellingham, WA 98229}
+1605 Terrace Ave\\
+Snohomish WA, 98290}
 
 &
 \parbox[m][5\baselineskip]{\spacewidth}{} &
@@ -289,32 +291,20 @@ Bellingham, WA 98229}
 \section{Skills}
 
 \begin{innerlist}
-  \item[] \textbf{Microsoft Certified Professional, Microsoft Certified Technology Specialist}
-  \begin{innerlist}
-    \item Certified Since 2005 - MCP\# 3380893
-    \item Validation: Transcript ID 1135400 | Access Code 17ELN89P
-  \end{innerlist}
-
-  \item[] \textbf{Member of the Microsoft IT Advisory Council}
-  \begin{innerlist}
-    \item 2008 - Current
-  \end{innerlist}
-
   \item[] \textbf{Programming Languages}
   \begin{innerlist}
     \item Professional: C, C\#, other .NET platforms (ASP, VB, etc.)
-    \item Academic: Python, Java, C++, Perl, Ruby, PHP, Scheme
+    \item Academic: Java, Python, C++, Perl, Ruby, PHP, Scheme
     \item Ability to quickly learn new languages, techniques
   \end{innerlist}
 
   \item[] \textbf{Source Control Experience}
   \begin{innerlist}
-    \item Team Foundation Server: Extensive usage over many years
-    \item Git / Github: Small team projects / local file system usage
-    \item SVN, CVS: Academic usage
+    \item Git, SVN, Microsoft Team Foundation Server
+    \item CVS: Academic usage
   \end{innerlist}
   
-  \item[] \textbf{Elective Coursework}
+  \item[] \textbf{University Elective Coursework}
   \begin{innerlist}
     \item Parallel Computation: Use of compute cluster / MPI / Infniband / MapReduce
     \item Mobile Device Programming: Writing native apps for the Android platform
@@ -322,22 +312,28 @@ Bellingham, WA 98229}
     \item Internet Studies Internship: Wrote a web API using Java / MySQL / JSON
   \end{innerlist}
 
-  \item[] \textbf{10+ years Windows experience}
+  \item[] \textbf{Microsoft Certified Professional, Microsoft Certified Technology Specialist}
   \begin{innerlist}
-    \item Desktop: Every major version from NT 4.0 through Windows 8.1
-    \item Server: Every major version from NT 4.0 through Server 2012 R2
+    \item Certified Since 2005 - MCP\# 3380893
+    \item Validation: Transcript ID 1135400 | Access Code 17ELN89P
+  \end{innerlist}
+
+  \item[] \textbf{IT Experience: 15+ years Windows experience}
+  \begin{innerlist}
+    \item Desktop: Every major version from NT 4.0 through Windows 10
+    \item Server: Every major version from NT 4.0 through Server 2016
     \item Hyper V virtualization services
     \item Exchange Server 2003 through recent (SBS and Standard Versions)
     \item SQL Server 2000 through recent
 	\item Active Directory \& Group Policy management experience
   \end{innerlist}
 
-  \item[] \textbf{6+ years Linux / FreeBSD experience}
+  \item[] \textbf{IT Experience: 9+ years Linux / FreeBSD experience}
   \begin{innerlist}
-    \item ZFS, NFS, Samba, DHCP, PXE, TFTP services
+    \item ZFS, NFS, SMB, CIFS, DHCP, PXE, TFTP services
     \item Use of MySQL, PHP, Apache in production environments
-    \item Support of 200+ Linux workstations, 2010 though current
-    \item FreeBSD based systems, such as FreeNAS, pfSense, etc.
+    \item Support of 200+ Linux workstations, at university - 2010 though 2014
+    \item FreeBSD based systems, such as Isilon, FreeNAS, pfSense, etc.
   \end{innerlist}
 
   \item[] \textbf{Other interests I have and interesting things I've worked with}
@@ -349,7 +345,7 @@ Bellingham, WA 98229}
     \item Various 3D printing and CNC wood working machines
   \end{innerlist}
 
-  \item[] \textbf{Working to provide solutions in technology for the past 14 years}
+  \item[] \textbf{Working to provide solutions in technology for the past 20 years}
 \end{innerlist}
 
 
@@ -357,9 +353,9 @@ Bellingham, WA 98229}
 
 \href{http://www.wwu.edu/}{\textbf{Western Washington University}}, Bellingham, WA
 \begin{innerlist}
-  \item[] B.S., \href{https://cse.wwu.edu/computer-science}{Computer Science}
+  \item[] B.S., \href{https://cse.wwu.edu/computer-science}{Computer Science}, August 2014
   \begin{innerlist}
-    \item Expected graduation in August 2014
+    \item Elective coursework around Unix, parallel computation, and mobile device development
     \item Certificate from the \href{http://yorktown.cbe.wwu.edu/isc/}
           {Internet Studies Center} (Web Programmer Track)
   \end{innerlist}
@@ -376,15 +372,36 @@ Bellingham, WA 98229}
 \end{innerlist}
 
 \medskip
+\medskip
+\medskip
+\medskip
 
 \section{Experience}
+
+\href{https://www.emc.com/en-us/storage/isilon/}{\textbf{Isilon Systems}}\textbf{ part of \href{https://www.emc.com/en-us/}{Dell | EMC}}, Seattle, WA
+\begin{outerlist}
+  \item[] \textit{Principal Software Quality Engineer, Senior Software Quality Engineer}
+  \hfill \textbf{2014 - Present}
+  \begin{innerlist}
+  \item Determine cause of software failures in the field, specifically in these areas
+  \begin{innerlist}
+    \item AIMA (Authentication, Identity Management, and Access control)
+    \item File Protocols - specifically SMB, CIFS, NFS, NFSv4, FTP
+    \item Networking components including Ethernet and Infiniband stacks
+  \end{innerlist}
+  \item Analysis of program cores using GDB and similar tools
+  \item Determining protocol adherence based on network packet captures
+  \end{innerlist}
+\end{outerlist}
+
+\halfblankline
 
 \href{http://www.wwu.edu/}{\textbf{Western Washington University}}, Bellingham, WA
 \begin{outerlist}
   \item[] \textit{Systems Administrator, Computer Science Department}
-  \hfill \textbf{2012 - Present}
+  \hfill \textbf{2012 - 2014}
   \begin{innerlist}
-    \item Assisting the Senior System Analyst/Programmer in tasks and projects
+    \item Assisted the Senior System Analyst/Programmer in tasks and projects
     \item Experience with FreeBSD, especially with ZFS, NFS, and Samba
     \item Supported a large user base (2000+) across Windows and Unix / Linux systems
     \item Installed \& assisted the configuration of a high performance computing cluster
@@ -414,17 +431,15 @@ Bellingham, WA 98229}
 \begin{outerlist}
   \item[] \textit{Software Engineer}
   \hfill (2010 - Present: Part-time contract)
-  \hfill \textbf{2008 - Present}
+  \hfill \textbf{2008 - 2014}
   \begin{innerlist}
   \item Developed and maintained internal ticketing software (Service Ticket Plus)
   \begin{innerlist}
-    \item Sofware developed in C\#
-    \item MySQL, MSSQL, SQLite databases used
-    \item WinForms for user interfaces
-    \item Class Library Objects for business logic
+    \item Software developed in C\#, with MySQL, MSSQL, SQLite databases used
+    \item WinForms for user interfaces, classes for business logic
   \end{innerlist}
   \item Extended exposure to Team Foundation Server
-  \item Exposure to thrid-party library usage, vendor specific hardware
+  \item Exposure to thrid-party library and driver usage, vendor specific hardware
   \end{innerlist}
 \end{outerlist}
 
@@ -437,36 +452,18 @@ Bellingham, WA 98229}
   \\Job responsibilities have changed greatly over time; basic list (In-Office and On-Site):
   \begin{innerlist}
     \item Day to day maintenance of approximately twenty small business networks
-    \\    (Small Business defined as 75 nodes or less, most 20 - 40 nodes)
     \item Manage a small team of system engineers, keeping idle time to a minimum
     \item Responsible for server configurations, builds, RAID mgt., O/S loads
     \item Responsible for deployment of Active Directory, Exchange, DNS, DHCP, etc.
     \item Responsible for configuration of SonicWALL brand firewalls / routers
     \item Responsible for WAN link site-to-site setup and optimizations in organizations
-    \\    with multiple physical locations, both 'local loops' and VPN based
-    \\    (including international data transactions [Mexico / US] [Europe / US])
     \item First responder for system wide downtime / failures - 24 hour on-call
-    \item Built and maintained in-house issue ticketing system (RMS), with desktop
-    \\    application, web access, and mobile phone access, using C\# Microsoft SQL Server,
-    \\    SQLite, ASP.NET, VB.NET, and Crystal Reports (evolved into STP, see above)
     \item Implement special customer requests, for example, POS systems, Wi-Fi barcode
     \\    scanners, distributed wireless systems, custom programming, reports, etc.
   \end{innerlist}
 \end{outerlist}
 
 \halfblankline
-
-\href{https://web.archive.org/web/*/pcselect.us}{\textbf{PC Select Computers}}, Monroe, WA
-\begin{outerlist}
-  \item[] \textit{Store Manager}
-  \hfill (1998 - 2001: Part time)
-  \hfill \textbf{1998 - 2003}
-  \begin{innerlist}
-    \item Configure, Build, and Repair desktop and light server systems
-    \item On-site support of home users, and business (less than 15 nodes)
-    \item Worked part-time during high school, full time thereafter
-  \end{innerlist}
-\end{outerlist}
 
 \end{document}
 
