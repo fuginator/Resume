@@ -1,7 +1,7 @@
 % Resume for Andrew Fugier
 % Original template was located at
 % http://www.tedpavlic.com/post_resume_cv_latex_example.php
-% I've left almost all of the original comments and whatnot so that if
+% I have left almost all of the original comments and whatnot so that if
 % others like the general format, they may use this as their own template.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -256,7 +256,6 @@
 \makeheading{Andrew Fugier}
 
 \section{Contact Information}
-
 % NOTE: Mind where the & separators and \\ breaks are in the following
 %       table. Table is one row made up of three parboxes. The left
 %       parbox has address info, the middle parbox has a vertical bar,
@@ -268,15 +267,13 @@
 %         \spacewidth is width of area between left and right boxes.
 
 \newlength{\rcollength}\setlength{\rcollength}{2.0in}%
-\newlength{\spacewidth}\setlength{\spacewidth}{20pt}
-
+\newlength{\spacewidth}\setlength{\spacewidth}{2pt}
 \begin{tabular}[t]{@{}p{\textwidth-\rcollength-\spacewidth}@{}p{\spacewidth}@{}p{\rcollength}}
 
 % Address box
 \parbox{\textwidth-\rcollength-\spacewidth}{
-Andrew Fugier\\
-1605 Terrace Ave\\
-Snohomish WA, 98290}
+1605 Terrace Ave \\
+Snohomish WA 98290}
 
 &
 \parbox[m][5\baselineskip]{\spacewidth}{} &
@@ -288,6 +285,93 @@ Snohomish WA, 98290}
 
 \end{tabular}
 
+\section{Education}
+
+B.S., \href{https://cse.wwu.edu/computer-science}{Computer Science}
+ ~~\,\href{http://www.wwu.edu/}{\textbf{Western Washington University}}
+
+A.A., General Studies
+ ~~~~~~\href{http://northseattle.edu/}{\textbf{North Seattle Community College}}
+
+
+\medskip
+
+\section{Experience}
+
+\href{https://www.emc.com/en-us/storage/isilon/}{\textbf{Isilon Systems}}\textbf{ part of \href{https://www.emc.com/en-us/}{Dell | EMC}}, Seattle, WA
+\begin{outerlist}
+  \item[] \textit{Principal Software Quality Engineer, Senior Software Quality Engineer}
+  \hfill \textbf{2014 - Present}
+  \begin{innerlist}
+  \item Determine cause of software failures in the field, specifically in these areas
+  \begin{innerlist}
+    \item AIMA (Authentication, Identity Management, and Access control)
+    \item File Protocols - specifically SMB, CIFS, NFS, NFSv4, FTP
+    \item Network stack (drivers, transport, protocol, etc.)
+    \item Infiniband networks as used for inner-cluster communications
+  \end{innerlist}
+  \item Analysis of program cores using GDB, DTrace, and similar tools
+  \item Determine protocol adherence based on network packet captures
+  \item Deep understanding of mutexes, threads, processes within the C language.
+  \item Extensive experience with large clustered \& distributed systems.
+  \item Technically mentored other team members; provided training to other teams
+  \end{innerlist}
+\end{outerlist}
+
+\halfblankline
+
+\href{http://www.wwu.edu/}{\textbf{Western Washington University}}, Bellingham, WA
+\begin{outerlist}
+  \item[] \textit{Systems Administrator, Computer Science Department}
+  \hfill \textbf{2012 - 2014}
+  \begin{innerlist}
+    \item Assisted the Senior System Analyst/Programmer in tasks and projects
+    \item Experience with FreeBSD, especially with ZFS, NFS, and Samba
+    \item Supported a large user base (2000+) across Windows and Unix / Linux systems
+    \item Installed \& assisted the configuration of a high performance computing cluster
+    \begin{innerlist}
+      \item Experience with Rocks cluster management software (Linux Based)
+      \item Experience with IPMI Management Interfaces
+      \item Experience with Infiniband networking
+    \end{innerlist}
+    \item Cisco networking equipment exposure
+    \begin{innerlist}
+      \item Designed, implemented, and configured 20Gb/s backbone for the 
+            department, \\with over 400 individual gigabit service ports.
+      \item Experience in cross integrating technology between Cisco and 3rd party
+            equipment, in particular, Netgear and HP. (LLDP, Link Aggregation, etc.)
+    \end{innerlist}
+    \item Installed and configured large storage systems (~50TB usable)
+    \begin{innerlist}
+      \item 24+ Disk systems, multi-level ZFS, 200+ simultaneous connections
+      \item Backed by FreeBSD and ZFS, available through NFS and Samba
+    \end{innerlist}
+  \end{innerlist}
+\end{outerlist}
+
+\halfblankline
+
+\href{http://web.archive.org/web/20170515232545/http://valuelogic.com/}{\textbf{Value Logic}}, Vista, CA
+\begin{outerlist}
+  \item[] \textit{Software Engineer}
+  \hfill \textbf{2008 - 2014}
+  \begin{innerlist}
+  \item Developed and maintained internal ticketing software (Service Ticket Plus)
+  \item Software development in C\#, with MySQL, MSSQL, SQLite databases used
+  \item Exposure to thrid-party library and driver usage, vendor specific hardware
+  \end{innerlist}
+  \item[] \textit{IT Administrator, Senior IT Administrator}
+  \hfill \textbf{2003 - 2009}
+  \begin{innerlist}
+    \item Day to day maintenance of approximately twenty small business networks
+    \item Deployment of Active Directory, Exchange, DNS, DHCP, DFS, etc.
+    \item Configuration of SonicWALL and Cisco brand firewalls / routers
+    \item Implement requests, eg: POS systems, Wi-Fi barcode scanners, etc.
+  \end{innerlist}
+\end{outerlist}
+
+\medskip
+
 \section{Skills}
 
 \begin{innerlist}
@@ -295,7 +379,7 @@ Snohomish WA, 98290}
   \begin{innerlist}
     \item Professional: C, C\#, other .NET platforms (ASP, VB, etc.)
     \item Academic: Java, Python, C++, Perl, Ruby, PHP, Scheme
-    \item Ability to quickly learn new languages, techniques
+    \item Ability to quickly learn new languages and techniques
   \end{innerlist}
 
   \item[] \textbf{Source Control Experience}
@@ -345,127 +429,7 @@ Snohomish WA, 98290}
     \item Various 3D printing and CNC wood working machines
   \end{innerlist}
 
-  \item[] \textbf{Working to provide solutions in technology for the past 20 years}
 \end{innerlist}
-
-
-\section{Education}
-
-\href{http://www.wwu.edu/}{\textbf{Western Washington University}}, Bellingham, WA
-\begin{innerlist}
-  \item[] B.S., \href{https://cse.wwu.edu/computer-science}{Computer Science}, August 2014
-  \begin{innerlist}
-    \item Elective course-work around Unix, parallel computation, and mobile device development
-    \item Certificate from the \href{http://yorktown.cbe.wwu.edu/isc/}
-          {Internet Studies Center} (Web Programmer Track)
-  \end{innerlist}
-\end{innerlist}
-
-\medskip
-
-\href{http://northseattle.edu/}{\textbf{North Seattle Community College}}, Seattle, WA
-\begin{innerlist}
-  \item[] A.A., General Studies, August 2010
-  \begin{innerlist}
-    \item Achieved Dean's List status multiple quarters
-  \end{innerlist}
-\end{innerlist}
-
-\medskip
-\medskip
-\medskip
-\medskip
-
-\section{Experience}
-
-\href{https://www.emc.com/en-us/storage/isilon/}{\textbf{Isilon Systems}}\textbf{ part of \href{https://www.emc.com/en-us/}{Dell | EMC}}, Seattle, WA
-\begin{outerlist}
-  \item[] \textit{Principal Software Quality Engineer, Senior Software Quality Engineer}
-  \hfill \textbf{2014 - Present}
-  \begin{innerlist}
-  \item Determine cause of software failures in the field, specifically in these areas
-  \begin{innerlist}
-    \item AIMA (Authentication, Identity Management, and Access control)
-    \item File Protocols - specifically SMB, CIFS, NFS, NFSv4, FTP
-    \item Network stack (drivers, transport, protocol, etc.)
-    \item Infiniband networks as used for inner-cluster communications
-  \end{innerlist}
-  \item Analysis of program cores using GDB, DTrace, and similar tools
-  \item Determining protocol adherence based on network packet captures
-  \item Deep understanding of mutexes, threads, processes within the C language.
-  \item Extensive experience with large clustered \& distributed systems.
-  \item Technically mentored other team members; provided training to other teams
-  \end{innerlist}
-\end{outerlist}
-
-\halfblankline
-
-\href{http://www.wwu.edu/}{\textbf{Western Washington University}}, Bellingham, WA
-\begin{outerlist}
-  \item[] \textit{Systems Administrator, Computer Science Department}
-  \hfill \textbf{2012 - 2014}
-  \begin{innerlist}
-    \item Assisted the Senior System Analyst/Programmer in tasks and projects
-    \item Experience with FreeBSD, especially with ZFS, NFS, and Samba
-    \item Supported a large user base (2000+) across Windows and Unix / Linux systems
-    \item Installed \& assisted the configuration of a high performance computing cluster
-    \begin{innerlist}
-      \item Experience with Rocks cluster management software (Linux Based)
-      \item Experience with IPMI Management Interfaces
-      \item Experience with Infiniband networking
-    \end{innerlist}
-    \item Cisco networking equipment exposure
-    \begin{innerlist}
-      \item Designed, implemented, and configured 20Gb/s backbone for the 
-            department, \\with over 400 individual gigabit service ports.
-      \item Experience in cross integrating technology between Cisco and 3rd party
-            equipment, in particular, Netgear and HP. (LLDP, Link Aggregation, etc.)
-    \end{innerlist}
-    \item Installed and configured large storage systems (~50TB usable)
-    \begin{innerlist}
-      \item 24+ Disk systems, multi-level ZFS, 200+ simultaneous connections
-      \item Backed by FreeBSD and ZFS, available through NFS and Samba
-    \end{innerlist}
-  \end{innerlist}
-\end{outerlist}
-
-\halfblankline
-
-\href{http://www.valuelogic.com/}{\textbf{Value Logic}}, Vista, CA
-\begin{outerlist}
-  \item[] \textit{Software Engineer}
-  \hfill (2010 - Present: Part-time contract)
-  \hfill \textbf{2008 - 2014}
-  \begin{innerlist}
-  \item Developed and maintained internal ticketing software (Service Ticket Plus)
-  \begin{innerlist}
-    \item Software developed in C\#, with MySQL, MSSQL, SQLite databases used
-    \item WinForms for user interfaces, classes for business logic
-  \end{innerlist}
-  \item Extended exposure to Team Foundation Server
-  \item Exposure to thrid-party library and driver usage, vendor specific hardware
-  \end{innerlist}
-\end{outerlist}
-
-\halfblankline
-
-\href{http://www.valuelogic.com/}{\textbf{Value Logic}}, Vista, CA
-\begin{outerlist}
-  \item[] \textit{IT Administrator}
-  \hfill \textbf{2003 - 2009}
-  \\Job responsibilities have changed greatly over time; basic list (In-Office and On-Site):
-  \begin{innerlist}
-    \item Day to day maintenance of approximately twenty small business networks
-    \item Manage a small team of system engineers, keeping idle time to a minimum
-    \item Responsible for server configurations, builds, RAID mgt., O/S loads
-    \item Responsible for deployment of Active Directory, Exchange, DNS, DHCP, etc.
-    \item Responsible for configuration of SonicWALL brand firewalls / routers
-    \item Responsible for WAN link site-to-site setup and optimizations in organizations
-    \item First responder for system wide downtime / failures - 24 hour on-call
-    \item Implement special customer requests, for example, POS systems, Wi-Fi barcode
-    \\    scanners, distributed wireless systems, custom programming, reports, etc.
-  \end{innerlist}
-\end{outerlist}
 
 \halfblankline
 
